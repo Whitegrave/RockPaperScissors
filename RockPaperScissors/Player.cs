@@ -173,6 +173,19 @@ namespace RockPaperScissors
             Console.WriteLine($"Rounds won in all games: {this.TotalWins}");
             Console.WriteLine($"Rounds lose in all games: {this.TotalLosses}");
             Console.WriteLine($"Rounds tied in all games: {this.TotalTies}\n");
+            // Determine overall winner
+            if (this.SessionWins > this.SessionLosses)
+            {
+                Console.WriteLine("You were the overall winner!");
+            }
+            else if (this.SessionWins < this.SessionLosses)
+            {
+                Console.WriteLine("Your opponent was the overall winner...");
+            }
+            else
+            {
+                Console.WriteLine("Overall, you both tied. No winner!");
+            }
         }
 
         public void PromptToReplay()
