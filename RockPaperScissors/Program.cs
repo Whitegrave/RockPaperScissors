@@ -40,19 +40,6 @@ namespace RockPaperScissors
                     mainPlayer.PromptToReplay();
                 }
             } while (mainPlayer.RoundsRemaining > 0);
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
     }  
 }
