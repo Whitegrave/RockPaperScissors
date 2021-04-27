@@ -62,7 +62,7 @@ namespace RockPaperScissors
                 string inputTemp = Console.ReadLine();
                 // Cycle through each character with a Linq lambda to validate each character as a letter
                 bool nameValid = inputTemp.All(c => Char.IsLetter(c));
-                if (!nameValid)
+                if (!nameValid || inputTemp.Length == 0)
                 {
                     Console.WriteLine("That name was not valid. Please use letters only, no spaces or other characters.");
                 }
